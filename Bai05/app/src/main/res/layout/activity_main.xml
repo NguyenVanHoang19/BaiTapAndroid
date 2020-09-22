@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvGioiThieuThongTinCaNhan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:text="Chuơng trình tính tiền bán sách online"
+                android:textColor="#FBF9F9"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txvThongTinCaNhan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:text="Thông tin cá nhân"
+                android:textColor="#101010"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvTenKhachHang"
+                    android:layout_width="113dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="Tên khách hàng"
+                    android:textColor="#121111"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtTenKhachHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvSoLuongSach"
+                    android:layout_width="113dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="Số lượng sách"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtSoLuongSach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cboKhachHangVIP"
+                    android:layout_width="253dp"
+                    android:layout_height="match_parent"
+                    android:text="Khách hàng là VIP" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/txvTinhThanhTien"
+                    android:layout_width="152dp"
+                    android:layout_height="56dp"
+                    android:text="Thành tiền"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txvThanhTien"
+                    android:layout_width="276dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:background="#D6D3D3"
+                    android:textColor="#4CAF50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTinhThanhTien"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tính TT" />
+
+                <Button
+                    android:id="@+id/btnTiep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tiếp" />
+
+                <Button
+                    android:id="@+id/btnThongKe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Thống kê" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txvThongThongKe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:text="Thông tin thống kê"
+                android:textColor="#101010"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvTongSoKhachHang"
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tổng số KH"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txvTongKhachHang"
+                    android:layout_width="102dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvTongSoKhachHangLaVip"
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tổng số KH là VIP"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txvTongKhachHangLaVip"
+                    android:layout_width="102dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvTongSoDoanhTHu"
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tổng doanh thu"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txvTongDoanhThu"
+                    android:layout_width="102dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnExit"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@android:drawable/ic_delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
